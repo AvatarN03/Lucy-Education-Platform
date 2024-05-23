@@ -21,6 +21,9 @@ THe Responsive View:-
 The Website Uses The SwiperJS Framework for sliding effects.
 
 
+The Preview of Website:- https://avatarn03.github.io/Lucy-Education-Platform/
+
+
 Credits:-
 
 The Webiste is made with the help of Mr.Web Desginer (Youtube Channel) Video with little changes.
