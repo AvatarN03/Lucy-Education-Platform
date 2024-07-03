@@ -299,7 +299,7 @@ section{
 .teachers .slide{
     position: relative;
     overflow: hidden;
-    width: 42rem;
+    width: 45rem;
     background: var(--light-bg);
     border-radius: .5rem;
     border: 1px solid var(--white);
@@ -419,7 +419,7 @@ section{
 
     
 }
-.reviews .slide:hover .user img{
+.reviews .slide .user img:hover{
     width: 8rem;
     height: 8rem;
     transform: translateY(-3rem);
@@ -561,6 +561,7 @@ section{
     border: .2rem var(--white);
     border-radius: 50%;
     font-size: 2rem;
+    margin: 0 2.5rem;
     margin-top: .5rem;
     color: var(--white);
     background: var(--black);
@@ -582,6 +583,9 @@ section{
 
  .footer .copy span{
     color: var(--green);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 .5rem;
  }
 
 
@@ -666,6 +670,10 @@ section{
 
     .reviews .heading{
         font-size: 6rem;
+    }
+
+    .contact .row .image img{
+        width: 65%;
     }
 
 
