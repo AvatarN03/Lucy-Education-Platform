@@ -1,5 +1,25 @@
 let menu = document.querySelector('#menu');
 let nav = document.getElementsByTagName('nav')[0];
+let loader = document.getElementById('loading');
+let root = document.getElementById('root');
+
+
+
+function showLoader(){
+  loader.style.display = 'grid';
+  window.addEventListener('load', () => {
+    loader.style.display = 'none';
+    loader.style.zIndex = '-1';
+    root.style.opacity = '1';
+    
+    anime1();
+    
+  });
+}
+
+showLoader();
+
+
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
@@ -29,7 +49,7 @@ var swiper = new Swiper(".course-slider", {
       },
   });
 
-  
+
 var swiper = new Swiper(".teachers-slider", {
   spaceBetween: 20,
   loop: true,
@@ -76,11 +96,23 @@ var swiper = new Swiper(".reviews-slider", {
 });
 
 
+function anime1(){
 
-
-
-
-
+  gsap.from('.teachers', {
+    y:-100,
+    duration:1,
+    opacity:0,
+    delay:1,
+    scrollTrigger:{
+      trigger:'.teachers .heading',
+      start: 'top 60%',
+      end: 'top 30%',
+      markers:true,
+      scrub: true
+    }
+  }
+  )
+}
 
 
 
