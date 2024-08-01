@@ -107,7 +107,7 @@ function anime1(){
       trigger:'.teachers .heading',
       start: 'top 60%',
       end: 'top 30%',
-      markers:true,
+      
       scrub: true
     }
   }
