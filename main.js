@@ -115,6 +115,34 @@ function anime1(){
 }
 
 
+const form = document.getElementsByTagName('form')[0];
+
+function data() {
+  const inputs = [...document.getElementsByTagName('input')];
+  
+}
+
+form.addEventListener('submit', (e) => {
+  
+  data();
+
+  // To log all form values
+  const formData = new FormData(form);
+  formData.forEach((value, key) => {
+    console.log(`${key}: ${value}`);
+  });
+  
+  const obj = {};
+  formData.forEach((value, key) => {
+    obj[key] = value;
+  });
+  const jsonString = JSON.stringify(obj);
+  localStorage.setItem('formData', jsonString);
+
+  
+});
+
+
 
 
 
