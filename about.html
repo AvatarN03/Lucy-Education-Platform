@@ -85,15 +85,15 @@
     <script>
     const getData = localStorage.getItem('formData')
     
-    const get = JSON.parse(getData)
-    console.log(get);
+    const getObj = JSON.parse(getData)
+    console.log(getObj);
     
-    console.log(get.name)
+    console.log(getObj.name)
     const name = document.querySelector(".left h1 span")
-    const p = document.getElementsByTagName('p')[0]
-    console.log(p);
+    const line = document.getElementsByTagName('p')[0]
+    console.log(line);
     
-    p.textContent = `You Have Applied for ${get.course}`
-    name.textContent = get.name
+    line.textContent = `You Have Applied for ${getObj.course}`
+    name.textContent = getObj.name
     </script>
 </html>
