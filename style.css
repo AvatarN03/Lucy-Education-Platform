@@ -57,9 +57,9 @@ body{
 #loading{
     z-index: 900;
     width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
+    height: 100%;
+    /* position: fixed; */
+    /* top: 0; */
     display: none;
     place-items: center;
     background: #eee;
