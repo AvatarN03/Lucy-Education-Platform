@@ -48,7 +48,7 @@
                 <a href="#">_ 🅻 🆄 🅲 🆈 _</a>
                 <nav>
                     <a href="./index.html">Home</a>
-                    
+                   
                 </nav>
                 <div id="menu" class="fas fa-bars"></div>
 
@@ -85,15 +85,15 @@
     <script>
     const getData = localStorage.getItem('formData')
     
-    const getObj = JSON.parse(getData)
-    console.log(getObj);
+    const get = JSON.parse(getData)
+    console.log(get);
     
-    console.log(getObj.name)
+    console.log(get.name)
     const name = document.querySelector(".left h1 span")
-    const line = document.getElementsByTagName('p')[0]
-    console.log(line);
+    const p = document.getElementsByTagName('p')[0]
+    console.log(p);
     
-    line.textContent = `You Have Applied for ${getObj.course}`
-    name.textContent = getObj.name
+    p.textContent = `You Have Applied for ${get.course}`
+    name.textContent = get.name
     </script>
 </html>
